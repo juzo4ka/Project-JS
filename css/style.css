@@ -14,3 +14,28 @@ h1:hover {color: rgb(151, 243, 13);}
 /* Стили подвала */
 .footer {background-color: #333;color: white;padding: 10px;text-align: center;
 margin-top: 20px;width: 100%;}
+/*Субтитры*/
+.lyrics-container {
+    height: 200px;
+    overflow-y: auto;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    scroll-behavior: smooth;
+}
+.lyric-line {
+    margin: 12px 0;
+    padding: 8px;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+    font-size: 1.1em;
+}
+
+.lyric-line.active {
+    opacity: 1;
+    color: #ffeb3b;
+    transform: scale(1.05);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 235, 59, 0.5);
+}
